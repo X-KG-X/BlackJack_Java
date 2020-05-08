@@ -7,7 +7,7 @@ public class Card {
     private Rank rank;
 
     // STATIC NESTED CLASSES
-    public static enum Suit {HEART,SPADE,DIAMOND, CLUB}
+    public static enum Suit {HEART,SPADE,DIAMOND,CLUB}
     public static enum Rank{
         ACE(1), //TODO Ace can be 11 or 1
         TWO(2),
@@ -39,14 +39,6 @@ public class Card {
 
     //ACCESSOR METHODS
 
-    public Suit getSuit() {
-        return suit;
-    }
-
-
-    public Rank getRank() {
-        return rank;
-    }
 
 
 

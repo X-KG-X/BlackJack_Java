@@ -15,7 +15,7 @@ public class DealerTest {
 
     @Test
     public void testDealerStaticName(){
-        assertEquals("Polly", Dealer.name);
+        assertEquals("Polly", Dealer.NAME);
     }
 
     @Test
@@ -28,6 +28,17 @@ public class DealerTest {
     public void testShuffleDeck(){
         System.out.println(dealer.shuffleDeck());
         assertTrue(dealer.shuffleDeck());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testSetPlayerCount(){
+
+        dealer.setPlayerCount(20);
+    }
+
+    @Test
+    public void testDeal(){
+        //Check that each player including the dealer has been given 2 cards
     }
 
 }
